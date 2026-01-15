@@ -9,6 +9,7 @@ const router = express.Router();
 // Use the cors middleware to allow all origins
 router.use(cors());
 /* API routes */
+//router.use('/auth', require('./api/authRoutes'))
 router.use('/films', require('./api/filmRoutes'));
 router.use('/actors', require('./api/actorRoutes'));
 router.use('/categories', require('./api/categoryRoutes'));

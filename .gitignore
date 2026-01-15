@@ -1,2 +1,10 @@
-# Dependencies
-node_modules
+# Dependency directories
+node_modules/
+vendor/
+# Build output
+dist/
+build/
+.out/
+# Environment files
+.env
+.env.local
