@@ -4,7 +4,7 @@ const app = express();
 const bodyParser = require("body-parser");
 
 /* Database configuration */
-//const database = require('./app/config/dbconfig');
+//const database = require('./src/config/dbconfig');
 
 /* Init database */
 //database.init();
@@ -20,4 +20,4 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 /* Router configuration */
-app.use(require('./app/routes/Router'));
+app.use(require('./src/routes/Router'));
