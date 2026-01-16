@@ -2,7 +2,7 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-
+const router = require('./src/routes/router');
 /* Database configuration */
 //const database = require('./src/config/dbconfig');
 
@@ -20,6 +20,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(bodyParser.json());
 
 /* Router configuration */
-app.use(require('./src/routes/Router'));
+app.use(router);
 
 module.exports = app;
