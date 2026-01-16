@@ -11,9 +11,10 @@ const router = require('./src/routes/router');
 
 /* Init server listening */
 const port = process.argv[2] || 2400;
+/*
 app.listen(port, function () {
     console.log("Server listening on port : " + port);
-});
+}); */
 
 /* Express configuration */
 app.use(bodyParser.urlencoded({extended: false}));
