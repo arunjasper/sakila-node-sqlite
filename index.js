@@ -21,3 +21,5 @@ app.use(bodyParser.json());
 
 /* Router configuration */
 app.use(require('./src/routes/Router'));
+
+module.exports = app;
